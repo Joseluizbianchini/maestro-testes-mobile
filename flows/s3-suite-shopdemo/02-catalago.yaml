@@ -1,6 +1,8 @@
 appId: com.curso.shopdemo
 ---
-
+- launchApp:
+      clearState: true
+- runFlow: subflows\login.yaml
 
 - assertVisible: "Smartphone Pro 128GB"
 - assertVisible: "R$ 1.899,90"
