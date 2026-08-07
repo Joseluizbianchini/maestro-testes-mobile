@@ -1,24 +1,27 @@
 appId: com.curso.shopdemo
 ---
-- launchApp:
-    clearState: true
-- extendedWaitUntil:
-    visible:
-        id: "input-email"
-    timeout: 40000
+- retry:
+      maxRetries: 2
+      commands:
+          - launchApp:
+                clearState: true
+          - extendedWaitUntil:
+                visible:
+                    id: "input-email"
+                timeout: 60000
 - tapOn:
-    id: "input-email"
+      id: "input-email"
 - inputText: "cliente@shopdemo.com"
 - tapOn:
-    id: "input-senha"
+      id: "input-senha"
 - inputText: "123456"
-
+- hideKeyboard
 - tapOn: "btn-entrar"
 
 - extendedWaitUntil:
-    visible:
-        id: "tela-catalogo"
-    timeout: 40000
+      visible:
+          id: "tela-catalogo"
+      timeout: 40000
 
-- assertVisible: 
-    id: "tela-catalogo"
+- assertVisible:
+      id: "tela-catalogo"

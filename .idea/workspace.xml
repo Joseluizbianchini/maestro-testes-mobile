@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d640419-dcc2-4fa9-bd80-52afb058ae1f" name="Changes" comment="" />
+    <list default="true" id="2d640419-dcc2-4fa9-bd80-52afb058ae1f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flows/s3-suite-shopdemo/01-login.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/flows/s3-suite-shopdemo/01-login.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flows/s3-suite-shopdemo/02-catalago.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/flows/s3-suite-shopdemo/02-catalago.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flows/s3-suite-shopdemo/03-carrinho-checkout.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/flows/s3-suite-shopdemo/03-carrinho-checkout.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flows/s3-suite-shopdemo/04-e2e-compra.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/flows/s3-suite-shopdemo/04-e2e-compra.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flows/s3-suite-shopdemo/subflows/carrinho-checkout.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/flows/s3-suite-shopdemo/subflows/carrinho-checkout.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flows/s3-suite-shopdemo/subflows/catalogo.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/flows/s3-suite-shopdemo/subflows/catalogo.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flows/s3-suite-shopdemo/subflows/login.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/flows/s3-suite-shopdemo/subflows/login.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/resultado.xml" beforeDir="false" afterPath="$PROJECT_DIR$/reports/resultado.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,7 +45,7 @@
     "RunOnceActivity.readMode.enableVisualFormatting": "true",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "criando-workflows-github-actions",
+    "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Projetos/mobile/maestro/maestro-testes-mobile"
   }

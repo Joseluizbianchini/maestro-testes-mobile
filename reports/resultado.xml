@@ -1,15 +1,17 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <testsuites>
-  <testsuite name="Test Suite" device="Pixel_9" tests="4" failures="3" time="191.527" timestamp="2026-08-07T19:24:38">
-    <testcase id="01-login" name="01-login" classname="01-login" file="flows\s3-suite-shopdemo\01-login.yaml" time="60.076" timestamp="2026-08-07T19:24:38" status="ERROR">
-      <failure>Assertion is false: id: tela-catalogo is visible</failure>
+  <testsuite name="Test Suite" device="Pixel_9" tests="4" failures="4" time="7.032" timestamp="2026-08-07T19:57:37">
+    <testcase id="01-login" name="01-login" classname="01-login" file="flows\s3-suite-shopdemo\01-login.yaml" time="6.124" timestamp="2026-08-07T19:57:37" status="ERROR">
+      <failure>Unknown error</failure>
     </testcase>
-    <testcase id="02-catalago" name="02-catalago" classname="02-catalago" file="flows\s3-suite-shopdemo\02-catalago.yaml" time="36.99" timestamp="2026-08-07T19:25:38" status="ERROR">
-      <failure>Element not found: Id matching regex: btn-voltar</failure>
+    <testcase id="02-catalago" name="02-catalago" classname="02-catalago" file="flows\s3-suite-shopdemo\02-catalago.yaml" time="0.032" timestamp="2026-08-07T19:57:43" status="ERROR">
+      <failure>Unknown error</failure>
     </testcase>
-    <testcase id="03-carrinho-checkout" name="03-carrinho-checkout" classname="03-carrinho-checkout" file="flows\s3-suite-shopdemo\03-carrinho-checkout.yaml" time="40.763" timestamp="2026-08-07T19:26:15" status="ERROR">
-      <failure>Assertion is false: id: input-email is visible</failure>
+    <testcase id="03-carrinho-checkout" name="03-carrinho-checkout" classname="03-carrinho-checkout" file="flows\s3-suite-shopdemo\03-carrinho-checkout.yaml" time="0.799" timestamp="2026-08-07T19:57:43" status="ERROR">
+      <failure>Unknown error</failure>
     </testcase>
-    <testcase id="04-e2e-compra" name="04-e2e-compra" classname="04-e2e-compra" file="flows\s3-suite-shopdemo\04-e2e-compra.yaml" time="53.615" timestamp="2026-08-07T19:26:56" status="SUCCESS"/>
+    <testcase id="04-e2e-compra" name="04-e2e-compra" classname="04-e2e-compra" file="flows\s3-suite-shopdemo\04-e2e-compra.yaml" time="0.035" timestamp="2026-08-07T19:57:44" status="ERROR">
+      <failure>Unknown error</failure>
+    </testcase>
   </testsuite>
 </testsuites>

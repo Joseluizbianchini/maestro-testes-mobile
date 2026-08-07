@@ -3,41 +3,39 @@ env:
     PRODUTO_CARRINHO: ${PRODUTO_CARRINHO || "Fone de Ouvido Bluetooth"}
     PRECO_PRODUTO: ${PRECO_PRODUTO || "159,90"}
     TOTAL_CARRINHO: '${TOTAL_CARRINHO || "159,90"}'
-    NOME: ${NOME || "Jose"}
+    NOME: ${NOME || "Jeferson"}
     ENDERECO: ${ENDERECO || "Rua das Flores, 100"}
     CARTAO: ${CARTAO || "4111-1111-1111-1111"}
 ---
-- scrollUntilVisible: 
-    element: ${PRODUTO_CARRINHO}
-    direction: UP
+- scrollUntilVisible:
+      element: ${PRODUTO_CARRINHO}
+      direction: UP
 - tapOn: ${PRODUTO_CARRINHO}
 - tapOn:
-    id: "btn-adicionar"
+      id: "btn-adicionar"
 - assertVisible: "Produto adicionado com sucesso!"
 - tapOn:
-    id: "btn-ver-carrinho"
+      id: "btn-ver-carrinho"
 - assertVisible: "R$ ${PRECO_PRODUTO}"
 - assertVisible: "Total: R$ ${TOTAL_CARRINHO}"
 - assertVisible:
-    id: "btn-finalizar"
-    enabled: true
+      id: "btn-finalizar"
+      enabled: true
 - tapOn:
-    id: "btn-finalizar"
+      id: "btn-finalizar"
 - tapOn:
-    id: "input-nome"
+      id: "input-nome"
 - inputText: ${NOME}
 - tapOn:
-    id: "input-endereco"
+      id: "input-endereco"
 - inputText: ${ENDERECO}
 - tapOn:
-    id: "input-cartao"
+      id: "input-cartao"
 - inputText: ${CARTAO}
-- tapOn: "Finalizar pedido" #click para fechar o teclado sem usar o comando e evitar erros
-
+- hideKeyboard
 - tapOn:
-    id: "btn-confirmar"
-
+      id: "btn-confirmar"
 - assertVisible: "Pedido confirmado"
 - assertVisible:
-    id: "confirmacao-numero"
+      id: "confirmacao-numero"
 - assertVisible: "Pedido #.*"
