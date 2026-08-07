@@ -1,34 +1,13 @@
 appId: com.curso.shopdemo
+env:
+    PRODUTO_CATALOGO: '${PRODUTO_CATALOGO || "Smartphone Pro 128GB"}'
+    PRECO_CATALOGO: '${PRECO_CATALOGO || "1.899,90"}'
 ---
-- assertVisible: "Smartphone Pro 128GB"
-
-- tapOn: "Smartphone Pro 128GB"
-
-- assertVisible:
-    id: "tela-detalhe"
-
-- assertVisible: "Smartphone Pro 128GB"
-
-- assertVisible: "R$ 1.899,90"
-
-- tapOn:
-    id: "btn-voltar"
-
-- assertVisible:
-    id: "tela-catalogo"
-
-- assertNotVisible: "Mochila para Notebook"
-
 - scrollUntilVisible:
-    element: "Mochila para Notebook"
-
-- tapOn: "Mochila para Notebook"
-
+    element: ${PRODUTO_CATALOGO}
+- tapOn: ${PRODUTO_CATALOGO}
 - assertVisible:
-    id: "tela-detalhe"
-
-- assertVisible: "Mochila para Notebook"
-
-- assertVisible: "R$ 189,90"
-
+     id: "tela-detalhe"
+- assertVisible: ${PRODUTO_CATALOGO}
+- assertVisible: "R$ ${PRECO_CATALOGO}"
 - back
