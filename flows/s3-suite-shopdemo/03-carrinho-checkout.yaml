@@ -1,0 +1,58 @@
+appId: com.curso.shopdemo
+---
+- tapOn:
+    id: "input-email"
+- inputText: "cliente@shopdemo.com"
+- tapOn:
+    id: "input-senha"
+- inputText: "123456"
+
+- tapOn: "btn-entrar"
+
+- extendedWaitUntil:
+    visible:
+        id: "tela-catalogo"
+    timeout: 40000
+
+- assertVisible: 
+    id: "tela-catalogo"
+- tapOn: "Fone de Ouvido Bluetooth"
+
+- tapOn:
+    id: "btn-adicionar"
+
+- tapOn: "Produto adicionado com sucesso!"
+
+- tapOn:
+    id: "btn-ver-carrinho"
+
+- assertVisible: "R$ 159,90"
+- assertVisible: "Total: R$ 159,90"
+
+- assertVisible:
+    id: "btn-finalizar"
+    enabled: true
+- tapOn:
+    id: "btn-finalizar"
+
+- tapOn:
+    id: "input-nome"
+- inputText: "Jose"
+
+- tapOn:
+    id: "input-endereco"
+- inputText: "Rua Teste 112"
+- tapOn:
+    id: "input-cartao"
+- inputText: "123-456-789"
+
+
+- tapOn: "btn-confirmar"
+- tapOn: "btn-confirmar" #adicionado segundo click, pois o primeiro nao funcionou.
+
+- assertVisible: "Pedido confirmado"
+
+- assertVisible: "Pedido #.*"
+
+
+
