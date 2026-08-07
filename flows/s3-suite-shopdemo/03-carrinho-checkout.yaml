@@ -1,6 +1,6 @@
 appId: com.curso.shopdemo
 ---
-- runFlow: subflows\login.yaml
+- runFlow: subflows/login.yaml
 
 - tapOn:
     id: "input-email"
